@@ -517,7 +517,7 @@ export interface Employee {
 
 export interface TechActivityLog {
   id: string;
-  type: 'PECA_PEDIDA' | 'PECA_TROCADA' | 'SUPERVISOR_NOTIFICADO' | 'OS_CONCLUIDA' | 'PREVENTIVA_FEITA' | 'CHECKLIST_PROBLEMA' | 'CHECKLIST_OK' | 'CHECK_IN' | 'PAUSA_SEGURA';
+  type: 'PECA_PEDIDA' | 'PECA_TROCADA' | 'SUPERVISOR_NOTIFICADO' | 'OS_CONCLUIDA' | 'PREVENTIVA_FEITA' | 'CHECKLIST_PROBLEMA' | 'CHECKLIST_OK' | 'CHECK_IN' | 'PAUSA_SEGURA' | 'INSPECAO_PREVENTIVA';
   timestamp: string;
   date: string;
   title: string;

@@ -20,9 +20,7 @@ public class Technician {
     private String city;
     private String state;
 
-    @ElementCollection
-    @CollectionTable(name = "technician_specialties", joinColumns = @JoinColumn(name = "technician_id"))
-    @Column(name = "specialty")
+    @Transient
     private List<String> specialties;
 
     private Integer completedCallsMonth;

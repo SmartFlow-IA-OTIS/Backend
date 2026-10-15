@@ -17,6 +17,8 @@ public class Equipment {
 
     private String model;
     private String type; // ELEVADOR_PASSAGEIROS, ELEVADOR_CARGA, ESCADA_ROLANTE
+
+    @Transient
     private String customerName;
     private String buildingName;
     private String city;

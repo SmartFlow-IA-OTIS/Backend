@@ -28,13 +28,18 @@ public class CallTicket {
     private Boolean hasTrappedPassenger;
     private Boolean isCarStopped;
 
+    @Column(name = "technician_id")
     private String assignedTechnicianId;
+
+    @Column(name = "technician_name")
     private String assignedTechnicianName;
 
-    @Column(length = 1000)
+    @Column(name = "ai_recommendation", columnDefinition = "text")
     private String aiRecommendation;
 
     private LocalDateTime createdAt;
+
+    @Column(name = "solution_finished_at")
     private LocalDateTime completedAt;
 
     public CallTicket() {}
